@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
 class BasicDemo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return TextDemo();
+  }
+}
+
+class TextDemo extends StatelessWidget {
   final TextStyle _textStyle = TextStyle(
     fontSize: 16.0,
   );
