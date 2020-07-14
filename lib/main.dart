@@ -56,10 +56,15 @@ class Home extends StatelessWidget {
           child: ListView(
             padding: EdgeInsets.zero,
             children: <Widget>[
-              DrawerHeader(
-                child: Text('header'.toUpperCase()),
-                decoration: BoxDecoration(
-                  color: Colors.grey[200],
+              UserAccountsDrawerHeader(
+                accountName: Text(
+                  'yx',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                accountEmail: Text('yx@symphony.net'),
+                currentAccountPicture: CircleAvatar(
+                  backgroundImage: NetworkImage(
+                      'https://c-ssl.duitang.com/uploads/item/201704/23/20170423130053_2nWPB.thumb.1000_0.jpeg'),
                 ),
               ),
               ListTile(
