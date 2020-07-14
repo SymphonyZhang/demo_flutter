@@ -66,6 +66,17 @@ class Home extends StatelessWidget {
                   backgroundImage: NetworkImage(
                       'https://c-ssl.duitang.com/uploads/item/201704/23/20170423130053_2nWPB.thumb.1000_0.jpeg'),
                 ),
+                decoration: BoxDecoration(
+                    color: Colors.yellow[400],
+                    image: DecorationImage(
+                        image: NetworkImage(
+                          'https://00.minipic.eastday.com/20170818/20170818115256_d41d8cd98f00b204e9800998ecf8427e_1.jpeg',
+                        ),
+                        fit: BoxFit.cover,
+                        colorFilter: ColorFilter.mode(
+                          Colors.yellow[400].withOpacity(0.6),
+                          BlendMode.hardLight,
+                        ))),
               ),
               ListTile(
                 title: Text('Message', textAlign: TextAlign.end),
